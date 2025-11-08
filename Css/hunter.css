@@ -1,7 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #hunter-zone {
     background-color: lightblue;
     height: 2000px;
     width: 70px;
     text-align: center;
     overflow: hidden;
+}
+#menu {
+    list-style-type: none;
+    bottom: 100%;
+    transform: translateY(100%);
+    position: fixed;
+    background-color: rgba(44, 40, 40, 0.644);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 10px;
+}
+#list {
+    position: inherit;
+}
+#menu li {
+    display: inline-flex;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(26, 25, 25, 0.5);
 }

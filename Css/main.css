@@ -9,15 +9,30 @@
 }
 body {
     padding: center;
-    background-color: lightgreen;
     height: 2500px;
+    width: 1080px;
+    background-color: rgb(138, 71, 71);
+    background-image: url("../images/fire.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-#welcome{
+#Welcome{
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/fire.jpg');
+    background-size: 26%;
+    background-position: center;
+    background-repeat: no-repeat;
     color: rgb(201, 10, 10);
-    top: 500px;
+    top: 200px;
+    left: 50%;
+    transform: translateX(50%);
+    padding: 20px;
+    margin-top: 200px;
 }
 #menu {
+    margin: 10px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +43,7 @@ body {
     width: 97%;
     height: 50px;
     z-index: 4000;
-    background-color: rgb(96, 228, 107);
+    background-color: rgba(96, 228, 107, 0.753);
 }
 
 #menu ul {
@@ -75,4 +90,13 @@ body {
     font-size: 23px;
     color: rgb(13, 255, 5);
     animation: bigify 0.5s ease-out;
+}
+footer {
+    width: 100%;
+    left: 0%;
+    height: 200px;
+    position: absolute;
+    top: 300%;
+    transform: translateY(100%);
+    background-color: rgba(0, 0, 0, 0.596);
 }
