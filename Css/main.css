@@ -1,0 +1,22 @@
+body {
+    background-color: lightgreen;
+}
+
+#welcome{
+    color: rgb(201, 10, 10);
+}
+
+#menu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(34, 139, 34);
+    text-decoration: none;
+}
+
+#menu a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(129, 211, 129)
+}
