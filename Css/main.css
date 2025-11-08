@@ -15,7 +15,7 @@ body {
 
 #welcome{
     color: rgb(201, 10, 10);
-    margin: 20px;
+    top: 500px;
 }
 #menu {
     display: flex;
