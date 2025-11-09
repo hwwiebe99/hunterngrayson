@@ -1,17 +1,31 @@
+const menu = document.getElementsByClassName("menus");
+const canseeme = document.getElementsByClassName("canseeme");
+const holder = document.getElementById("holder")
 
-zone = document.getElementById("hunter-zone");
-let id;
-zone.addEventListener('mouseenter', () => {
-    clearInterval(id);
-    id = setInterval(() => {
 
-    }, (() => {
-        zone.style.width += 5;
-        if (zone.style.width >= '250px') {
-            clearInterval(id);  
-        }
-        else {
-            clearInterval(id);  
-        }
-    }, 20));
-})
+
+
+
+function mouseover(elements)
+{
+
+    for(i=0; i <elements.length; i++)
+    {
+        elements[i].addEventListener('mouseenter', function() { 
+            const menu = document.getElementsByClassName("menus");   
+            for(i = 0; i <menu.length; i++)
+                {
+                    menu[i].hidden = false;
+                } 
+        });
+        elements[i].addEventListener('mouseleave', function() {     
+            const menu = document.getElementsByClassName("menus");   
+            for(i = 0; i <menu.length; i++)
+                {
+                    menu[i].hidden = true;
+                }
+        });
+    }
+}
+mouseover(canseeme);
+mouseover(menu);
